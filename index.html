@@ -3,7 +3,8 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Site titel</title>
+  <link rel="icon" href="./images/icon.png">
+  <title>SITE TITEL</title>
 
   <!-- Scripts -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -19,7 +20,7 @@
   <!-- Navigation bar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="index.html">
-      <!-- <img src="./images/" alt="" loading="lazy"> -->
+      <!-- <img src="./images/" alt="" > -->
       <h1>LOGO</h1>
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,22 +29,16 @@
     <div id="navbarNavDropdown" class="collapse navbar-collapse flex-grow-1 bg-light text-right">
       <ul class="navbar-nav ml-auto flex-nowrap mr-sm-5 mr-md-5">
         <li class="nav-item active">
-          <a class="nav-link" href="index.html">HOME <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="index.html">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="menu.html">MENU</a>
+          <a class="nav-link" href="#about">Wie zijn wij</a>
         </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link disabled" href="shop.html">Shop</a>
+        </li> -->
         <li class="nav-item">
-          <a class="nav-link" href="events.html">EVENTS</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="news.html">NEWS</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="galleries.html">GALLERIES</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="contact.html">CONTACT</a>
+          <a class="nav-link" href="#contact">Contact</a>
         </li>
       </ul>
     </div>
@@ -51,25 +46,12 @@
 
   <!-- Header -->
   <div class="header">
-    <div class="row py-5">
-      <img src="./Provided/images/reduced-logo.png" class="mx-auto my-5 d-block" alt="">
-    </div>
-    <div class="row mt-5">
-      <div class="btn-toolbar header-btn mt-5 mx-auto" role="toolbar" aria-label="Toolbar with button groups">
-        <div class="btn-group mr-4" role="group">
-          <a href="menu.html"><button type="button" class="btn btn-light px-4 py-2 text-primary shadow">NEW MENU!!!</button></a>
-        </div>
-        <div class="btn-group mr-4" role="group">
-          <a href="#ourstory"><button type="button" class="btn btn-light px-4 py-2 text-primary shadow">OUR STORY</button></a>
-        </div>
-        <div class="btn-group mr-4" role="group">
-          <a href="#news"><button type="button" class="btn btn-light px-4 py-2 text-primary shadow">NEWS</button></a>
-        </div>
-        <div class="btn-group mr-4" role="group">
-          <a href="#events"><button type="button" class="btn btn-light px-4 py-2 text-primary shadow">EVENTS</button></a>
-        </div>
-        <div class="btn-group" role="group">
-          <a href="#findus"><button type="button" class="btn btn-light px-4 py-2 text-primary shadow">FIND US</button></a>
+    <div class="container" style="height: 500px;">
+      <div class="row h-100 ml-md-3 ml-lg-5">
+        <div class="col-12 col-md-8 col-lg-6 align-self-center text-center">
+          <h1 class="text-white w-100">Tech Bedrijfsnaam</h1>
+          <h3 class="text-white w-100">Voorbeeld van een slogan!</h3>
+          <a href="#contact" class="btn btn-primary text-white btn-shadow">Contact</a>
         </div>
       </div>
     </div>
@@ -77,237 +59,182 @@
 
   <!-- Content -->
   <div class="container">
-    <a class="anchor" id="ourstory"></a>
+    <a class="anchor" id="about"></a>
     <div class="row mt-5">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-sm"></div>
-          <div class="col-sm">
-            <img src="./Provided/images/leaf.png" class="mb-n5" alt="">
-          </div>
-        </div>
-      </div>
 
       <div class="row">
-        <div class="col-sm-5 ml-4 mr-n4 px-5">
-          <div class="row">
-            <img src="./Provided/images/green-med-size.jpg" class="mx-auto d-block image-fluid" alt="">
-          </div>
-          <h2 class="text-custom text-center mt-3">OUR STORY</h2>
-          <h5 class="text-custom text-center">THE RAMBLERS REST</h5>
-          <div class="row mt-1">
-            <img src="./Provided/images/dots.JPG" alt="" class="mx-auto">
-          </div>
-          <section class="text-center text-muted small">
-            The Ramblers Rest in Chislehurst, a charming country pub tucked behind a gentle slope
-            beyond the cricket green, has been serving traditional ales since the late 17th century.
+        <div class="col-5 ml-1 mr-n1 ml-md-4 px-md-5">
+          <h2 class="text-custom text-center mt-3">WIE ZIJN WIJ</h2>
+          <h5 class="text-custom text-center">TECH BEDRIJFSNAAM</h5>
+          <section class="text-justify text-muted small">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ac mi accumsan, pharetra mi non, mollis eros. Morbi et massa quis tortor porttitor consequat. Donec commodo, nisi et eleifend maximus, justo lectus porttitor risus,
+            laoreet convallis urna tellus vel mauris. Quisque at mi lacinia, sodales lorem quis, pretium orci. Nulla tellus ipsum, tincidunt et pharetra in, sodales vestibulum neque. Sed pulvinar molestie enim, id laoreet tortor semper in.
           </section>
-          <section class="text-center text-muted mt-4 small">
-            Having recently undergone a refurbishment program, the pub has been transformed into a
-            stylish venue, yet retained much of its charm and character and remains warm and inviting.
+          <section class="text-justify text-muted mt-4 small">
+            In dapibus, dolor sed pellentesque varius, sapien mauris vestibulum tellus, eget pretium magna velit vitae quam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam dictum nisl non metus molestie
+            dapibus. Duis bibendum odio ut maximus tempus. Aliquam sollicitudin velit nulla, nec faucibus orci cursus sed.
           </section>
         </div>
-        <div class="col-sm-1"></div>
-        <div class="col-sm-6">
+        <div class="d-none d-md col-md-1"></div>
+        <div class="col-7 col-md-6">
           <div class="row">
             <div class="col-sm">
-              <img src="./Provided/images/ramblerpub.jpg" class="white-border w-100 img-fluid" alt="">
+              <img src="./images/ph-2.jpg" class="white-border w-100 img-fluid" alt="">
             </div>
           </div>
           <div class="row mt-3">
             <div class="col-sm">
-              <img src="./Provided/images/image1.jpg" class="white-border w-100 img-fluid" alt="">
+              <img src="./images/ph-1.jpg" class="white-border w-100 img-fluid" alt="">
             </div>
             <div class="col-sm">
-              <img src="./Provided/images/image1 copy.jpg" class="white-border w-100 img-fluid" alt="">
+              <img src="./images/ph-3.jpg" class="white-border w-100 img-fluid" alt="">
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="gradient"></div>
     <div class="white-space"></div>
 
-    <a class="anchor" id="news"></a>
+    <a class="anchor" id="reviews"></a>
 
-    <div class="leaf">
-      <img src="./Provided/images/leaf.png" class="mt-n5 ml-5 float-right" alt="">
-    </div>
     <div class="row mt-5">
-      <div class="row">
-        <div class="col-sm-7">
-          <div class="row">
-            <div class="col-sm">
-              <img src="./Provided/images/image3 copy.jpg" class="white-border w-100 img-fluid" alt="">
-            </div>
-          </div>
-          <div class="row mt-3">
-            <div class="col-sm">
-              <img src="./Provided/images/image2.jpg" class="white-border w-100 img-fluid" alt="">
-            </div>
-            <div class="col-sm">
-              <img src="./Provided/images/Ramblers_night.jpg" class="white-border w-100 img-fluid" alt="">
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-5 ml-4 mr-n4">
-          <div class="row">
-            <img src="./Provided/images/kochloeffel-d75200519-crop-u487.png" class="mx-auto d-block image-fluid" alt="">
-          </div>
-          <h2 class="text-custom text-center mt-3">NEWS</h2>
-          <h5 class="text-custom text-center">LATEST MENU & FOOD OPENING TIMES</h5>
-          <div class="row mt-1">
-            <img src="./Provided/images/dots.JPG" alt="" class="mx-auto">
-          </div>
-          <section class="text-center text-muted small">
-            New Chef!
-          </section>
-          <section class="text-center text-muted mt-4 small">
-            Our new chef is currently developing our exciting new menu, <br />
-            ready for launch in August. Watch this space!
-          </section>
-          <section class="text-center text-muted mt-5 small">
-            Here at the ramblers rest we serve food: <br />
-            <u>Monday to Saturday</u> <br />
-            11.00-9.00
-          </section>
-          <section class="text-center text-muted mt-3 small">
-            50% off all meals Monday-Wednesday starting 1st August 2020
-          </section>
-          <section class="text-center text-muted mt-3 small">
-            <u>Sunday</u><br />
-            12.00-8.00 <br />
-            (New Sunday Lunch Menu Coming Soon!)
-          </section>
-          <section class="text-center text-muted mt-3 small">
-            All Day Breakfast Now Available!<br />
-            Summer holidays are nearly here so come down & eat with us!!
-          </section>
-        </div>
-      </div>
-    </div>
-
-    <div class="white-space"></div>
-    <div class="gradient"></div>
-    <div class="white-space"></div>
-
-    <a class="anchor" id="events"></a>
-    <div class="row mt-5">
-      <div class="col-sm">
-        <img src="./Provided/images/3.png" alt="" class="img-fluid mx-auto d-block">
+      <div class="col-12">
+        <h2 class="text-custom text-center">Wat onze klanten zeggen</h2>
       </div>
     </div>
     <div class="row mt-3">
-      <div class="col-sm">
-        <h1 class="text-custom text-center">UPCOMING EVENTS</h1>
-      </div>
-    </div>
-    <div class="row mt-1">
-      <div class="col-sm">
-        <h4 class="text-custom text-center">MUSIC & SPORTS</h4>
-      </div>
-    </div>
-    <div class="row mt-1">
-      <img src="./Provided/images/dots.JPG" alt="" class="mx-auto">
-    </div>
-    <div class="row mt-5">
-      <div class="col-sm-2"></div>
-      <div class="col-sm-4">
+      <div class="col-12 col-md-4 mt-sm-2">
         <div class="row">
-          <div class="col-sm">
-            <h3 class="text-custom text-center w-100">LIVE ENTERTAINMENT</h3>
-            <div class="row mt-1">
-              <img src="./Provided/images/dots.JPG" alt="" class="mx-auto">
-            </div>
-            <section class="text-center text-muted mt-3 small w-100">
-              Live entertainment will be available throughout the year.
-            </section>
+          <div class="col-3"></div>
+          <div class="col-6">
+            <img src="./images/hs-1.jpg" alt="" class="img-fluid w-100 rounded-circle">
           </div>
         </div>
-      </div>
-      <div class="col-sm-4">
-        <div class="row">
-          <div class="col-sm">
-            <h3 class="text-custom text-center w-100">SPORTS EVENTS</h3>
-            <div class="row mt-1">
-              <img src="./Provided/images/dots.JPG" alt="" class="mx-auto">
-            </div>
-            <section class="text-center text-muted mt-3 small">
-              Champions League Games, Premiership fixtures and other Main Sporting
-              Events will be shown throughout the week and at weekends.
-            </section>
+        <div class="row mt-3">
+          <div class="col-12">
+            <h5 class="text-custom text-center">Voornaam Achternaam</h5>
           </div>
+          <div class="col-12">
+            <h5 class="text-muted text-center small font-weight-bold">CEO van Example Co.</h5>
+          </div>
+          <div class="col-4 mx-auto">
+            <img src="./images/sterren.jpg" class="w-100 img-fluid" alt="">
+          </div>
+        </div>
+        <div class="col-12 mt-3">
+          <section class="text-center text-custom">
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ac mi accumsan, pharetra mi non, mollis eros. Morbi et massa quis tortor porttitor consequat."
+          </section>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 mt-sm-5">
+        <div class="row">
+          <div class="col-3"></div>
+          <div class="col-6">
+            <img src="./images/hs-2.jpg" alt="" class="img-fluid w-100 rounded-circle">
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-12">
+            <h5 class="text-custom text-center">Voornaam Achternaam</h5>
+          </div>
+          <div class="col-12">
+            <h5 class="text-muted text-center small font-weight-bold">CEO van Example Co.</h5>
+          </div>
+          <div class="col-4 mx-auto">
+            <img src="./images/sterren.jpg" class="w-100 img-fluid" alt="">
+          </div>
+        </div>
+        <div class="col-12 mt-3">
+          <section class="text-center text-custom">
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ac mi accumsan, pharetra mi non, mollis eros. Morbi et massa quis tortor porttitor consequat."
+          </section>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 mt-sm-5">
+        <div class="row">
+          <div class="col-3"></div>
+          <div class="col-6">
+            <img src="./images/hs-3.jpg" alt="" class="img-fluid w-100 rounded-circle">
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-12">
+            <h5 class="text-custom text-center">Voornaam Achternaam</h5>
+          </div>
+          <div class="col-12">
+            <h5 class="text-muted text-center small font-weight-bold">CEO van Example Co.</h5>
+          </div>
+          <div class="col-4 mx-auto">
+            <img src="./images/sterren.jpg" class="w-100 img-fluid" alt="">
+          </div>
+        </div>
+        <div class="col-12 mt-3">
+          <section class="text-center text-custom">
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ac mi accumsan, pharetra mi non, mollis eros. Morbi et massa quis tortor porttitor consequat."
+          </section>
         </div>
       </div>
     </div>
 
-    <div class="row mt-5 mb-n3">
-      <img src="./Provided/images/ribbon.jpg" alt="" width="400px" class="mx-auto">
-    </div>
-    <div class="row">
-      <div class="mx-auto mt-n5">
-        <a href="events.html"><button type="button" class="btn btn-custom btn-light px-3 py-3 ml-n3 text-primary shadow">SEE ALL OUR EVENTS</button></a>
+    <div class="white-space"></div>
+
+    <a class="anchor" id="contact"></a>
+    <div class="row mt-5 contact pt-2 pb-5 white-border-sm">
+      <div class="col-md-6">
+        <div class="row mt-3">
+          <div class="col-sm">
+            <h2 class="text-custom text-sm-white">CONTACT</h2>
+          </div>
+        </div>
+        <div class="row mt-1">
+          <div class="col-sm">
+            <h4 class="text-custom text-sm-white">Laten we kennis maken!</h4>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-sm-12">
+            <form class="row">
+              <div class="form-group col-6">
+                <input type="text" placeholder="Voornaam*" class="form-control" id="inputFirstname" aria-describedby="firstname">
+              </div>
+              <div class="form-group col-6">
+                <input type="text" placeholder="Achternaam*" class="form-control" id="inputLastname" aria-describedby="lastname">
+              </div>
+              <div class="form-group col-6">
+                <input type="email" placeholder="Email*" class="form-control" id="inputEmail" aria-describedby="email">
+              </div>
+              <div class="form-group col-6">
+                <input type="text" placeholder="Telefoonnummer*" class="form-control" id="inputPhone" aria-describedby="phone">
+              </div>
+              <div class="small text-muted col-12 text-sm-white">
+                * Verplicht veld
+              </div>
+              <div class="text-center col-12">
+                <button type="submit" class="btn btn-custom px-5">VERSTUUR</button>
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="mx-auto">
-        <img src="./Provided/images/leaf.png" class="mt-5" alt="">
+      <div class="d-none d-md-block col-md-6">
+        <img src="./images/ph-4.jpg" alt="" class="img-fluid w-100 white-border">
       </div>
     </div>
   </div>
 
-  <a class="anchor" id="findus"></a>
-  <div class="row mt-5 bg-custom-light" style="height: 500px;">
-    <div class="col-sm-7">
-      <div class="float-right">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2488.691530444749!2d0.06033761612511496!3d51.40872237961903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8abb88d20faa1%3A0xa704e9f50d322990!2sRamblers%20Rest!5e0!3m2!1snl!2snl!4v1595940502206!5m2!1snl!2snl"
-          width="800" height="500" frameborder="0" style="border:0;" allowfullscreen="true" aria-hidden="false" tabindex="0"></iframe>
-      </div>
-    </div>
-    <div class="col-sm-3">
-      <div class="row">
-        <h2 class="text-white text-center w-100 mt-5">FIND US</h2>
-      </div>
-      <div class="row">
-        <img src="./Provided/images/3.png" class="mx-auto mt-4" alt="">
-      </div>
-      <div class="row mt-5 ml-3">
-        <section class="text-white w-100">
-          T: 0208 467 1734
-        </section>
-        <section class="text-white w-100">
-          <a href="mailto:lee@ramblers.rest" class="text-white">E: lee@ramblers.rest</a>
-        </section>
-        <h4 class="text-custom w-100 mt-4">ADDRESS</h4>
-        <section class="text-white w-100">
-          Ramblers Rest, Mill Place
-        </section>
-        <section class="text-white w-100">
-          Chislehurst, Kent, BR7 5ND
-        </section>
-      </div>
-      <div class="row mt-4 ml-3">
-        <div class="w-100">
-          <img src="./images/facebook.png" alt="" class="ml-2" height="20px" style="margin-right: 6px;">
-          <a href="https://www.facebook.com/TheRamblersRest" class="text-custom">FOLLOW US ON FACEBOOK</a>
-        </div>
-        <div class="w-100">
-          <img src="./images/twitter.png" alt="" height="20px">
-          <a href="https://twitter.com/search?q=%40RamblersBR7&src=typd&lang=en-gb" class="text-custom mb-3">FOLLOW US ON TWITTER</a>
-        </div>
-      </div>
-    </div>
-  </div>
   <!-- footer -->
-  <footer class="sticky-bottom bg-custom text-center mt-1">
-    <img src="./Provided/images/2.png" alt="" class="mx-auto pt-4 d-block">
-    <img src="./Provided/images/tel-icon-u11654.png" alt="" class="pt-2 mx-auto d-block">
-    <section class="text-white pb-3">
-      T: 0208 467 1734 <br />
-      <a class="text-white" href="mailto:pub@ramblers.rest">click here to send us an email</a> <br />
-      Ramblers Rest, Mill Place, Chislehurst, Kent, BR7 5ND.
+  <footer class="sticky-bottom bg-custom-dark text-center mt-5 pt-2">
+    <h1 class="text-white font-weight-bold">LOGO</h1>
+    <img src="./images/tel-icon-u11654.png" alt="" class="pt-2 mx-auto d-block">
+    <section class="text-white pb-3 border-bottom">
+      Telefoonnummer: +316******** <br />
+      <a class="text-white" href="mailto:example@example.com">Email: example@example.com</a> <br />
+      Adresgegevens: Postcode, Straat huisnr, Stad
+    </section>
+    <section class="text-white py-3">
+      © 2020 All rights reserved
     </section>
   </footer>
 </body>

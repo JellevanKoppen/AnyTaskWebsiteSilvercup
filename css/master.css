@@ -1,13 +1,13 @@
 html {
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 .header {
-  background: #FFFFFF url("../Provided/images/ramblersnewhomeopt.jpg") no-repeat center bottom;
-  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.5);
+  background: #FFFFFF url("../images/header.jpg") no-repeat center top;
+  box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.5);
   background-size: cover;
-  min-height: 692px;
-  padding-bottom: 145px;
+  min-height: 500px;
 }
 
 .header-border {
@@ -17,16 +17,20 @@ html {
 /* Custom elements */
 .navbar {
   border-bottom: 1px solid #EEF1F4;
+  padding: 0rem 2rem !important;
 }
 
-
-/* Needs fixing */
-.nav-item:hover {
-  border-bottom: 5px solid #00a2ff;
+.btn-shadow {
+  box-shadow: 0px 10px 17px rgba(0, 0, 0, 0.2)
 }
 
-.bg-light {
-  background-color: #fdfdfd;
+.active {
+  color: #081d31 !important;
+}
+
+.nav-item {
+  padding: 0.75rem 0 !important;
+  margin-bottom: 3px;
 }
 
 .white-border {
@@ -34,30 +38,15 @@ html {
   box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.09), 0px 0px 2px rgba(0, 0, 0, 0.09), 6px 6px 8px rgba(0, 0, 0, 0.35);
 }
 
-.leaf {
-  position: absolute;
-  margin-top: 750px;
-  margin-left: 300px;
-}
-
 .anchor {
   display: block;
   position: relative;
-  top: -107px;
+  /* top: -107px; */
   visibility: hidden;
 }
 
-.gradient {
-  height: 36px;
-  width: 100vw !important;
-  left: 0;
-  margin-top: 5rem;
-  position: absolute;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0) 100%);
-}
-
 .white-space {
-  height: 10rem;
+  height: 5rem;
 }
 
 #maps-overlay {
@@ -79,12 +68,31 @@ html {
   background-color: #ccecff !important;
 }
 
+.bg-custom-dark {
+  background-color: #081d31 !important;
+}
+
+.bg-light {
+  background-color: #fdfdfd;
+}
+
+.nav-link {
+  color: #314c67 !important;
+  transition: color 0.5s ease;
+}
+
+.nav-item:hover {
+  border-bottom: 3px solid #00a2ff;
+  color: #081d31 !important;
+  margin-bottom: 0;
+}
+
 .text-custom {
-  color: #00a2ff !important;
+  color: #081d31 !important;
 }
 
 .text-custom-muted {
-  color: #ccecff !important;
+  color: #314c67 !important;
 }
 
 .btn-custom {
@@ -106,4 +114,30 @@ html {
 .header-btn button:hover {
   background-color: #00a2ff !important;
   color: white !important;
+}
+
+@media only screen and (max-width:993px) {
+  .nav-item:hover {
+    border-bottom: 0;
+    margin-bottom: 3px;
+  }
+  .nav-link:hover {
+    color: #00a2ff !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .contact {
+    display: absolute;
+    background: #FFFFFF url("../images/ph-4.jpg") no-repeat center;
+    background-size: cover;
+  }
+
+  .text-sm-white {
+    color: white !important;
+  }
+
+  .white-border-sm { border: 15px solid white;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.09), 0px 0px 2px rgba(0, 0, 0, 0.09), 6px 6px 8px rgba(0, 0, 0, 0.35);
+  }
 }
