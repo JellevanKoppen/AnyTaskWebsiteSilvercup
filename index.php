@@ -16,6 +16,81 @@
   <link rel="stylesheet" href="./css/master.css">
 </head>
 
+<?php
+
+$error_message = "";
+$success_message = "";
+
+$required = array("inputEmail", "inputFirstname", "inputLastname", "inputPhone");
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  $error_message = "";
+  $success_message = "";
+  $public = true;
+  $correct = true;
+
+  foreach($required as $field) {
+    if (empty($_POST[$field])) {
+      $error_message = "Graag alle verplichte velden invullen";
+      $correct = false;
+      break;
+    }
+  }
+
+  if ($public) {
+    $correct = false;
+    $error_message = "Contactformulier tijdelijk uitgeschakelt wegens gegevensbescherming!";
+  }
+
+  if ($correct) {
+
+    $email = $_POST['inputEmail'];
+    $voornaam = $_POST['inputFirstname'];
+    $achternaam = $_POST['inputLastname'];
+    $nummer = $_POST['inputPhone'];
+
+    $subject = "Bericht van " . $voornaam;
+    $content = "Hi, <br /> Deze persoon heeft het contactformulier van je website ingevult! <br /><br />";
+    $content .= "Naam: " . $voornaam . "<br /> Achternaam: " . $achternaam . "<br /> Email: " . $email . "<br /> Nummer: " . $nummer;
+
+    if (!empty($_POST['bericht'])){
+      $bericht = $_POST['bericht'];
+      $content .= "<br /> Bericht: <br />" . $bericht;
+    }
+
+    $fromAddress = "-fpostmaster@localhost";
+    $toEmail = "jelle@sprietenbos.nl";
+    $mailHeaders = "From: " . $voornaam . "<". $email .">\r\n";
+
+    require('inc/PHPMailer.php');
+    require('inc/SMTP.php');
+    $mail = new PHPMailer();
+    $mail->IsSMTP();
+    $mail->SMTPDebug = 0;
+    $mail->SMTPAuth = TRUE;
+    $mail->SMTPSecure = "tls";
+    $mail->Port     = 587;
+    $mail->Username = "silvercupanytask";
+    $mail->Password = "*****";
+    $mail->Host     = "smtp.gmail.com";
+    $mail->Mailer   = "smtp";
+    $mail->SetFrom("silvercupanytask@gmail.com", "Bedrijfsnaam");
+    $mail->AddReplyTo("silvercupanytask@gmail.com", "PHPPot");
+    $mail->AddAddress("silvercupanytask@gmail.com");
+    $mail->Subject = $subject;
+    $mail->WordWrap = 80;
+    $mail->MsgHTML($content);
+    $mail->IsHTML(true);
+    if(!$mail->Send()) {
+      $error_message = "Problem sending email. \n";
+      $error_message .= $mail->ErrorInfo;
+    } else {
+      $success_message = "Bedankt voor je reactie, je hoort snel van ons!";
+    }
+  }
+}
+
+?>
+
 <body>
   <!-- Navigation bar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -44,18 +119,45 @@
     </div>
   </nav>
 
-  <!-- Header -->
-  <div class="header">
-    <div class="container" style="height: 500px;">
-      <div class="row h-100 ml-md-3 ml-lg-5">
-        <div class="col-12 col-md-8 col-lg-6 align-self-center text-center">
-          <h1 class="text-white w-100">Tech Bedrijfsnaam</h1>
-          <h3 class="text-white w-100">Voorbeeld van een slogan!</h3>
-          <a href="#contact" class="btn btn-primary text-white btn-shadow">Contact</a>
-        </div>
+  <!-- Carousel -->
+  <div id="carousel" class="carousel slide header-carousel" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carousel" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel" data-slide-to="1"></li>
+    <li data-target="#carousel" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="./images/h-1.jpg" alt="First slide">
+      <div class="carousel-caption d-none d-md-block">
+        <h5 class="text-custom">Welkom bij ...!</h5>
+        <p class="text-custom">Hier kun je een ondertitel plaatsen</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="./images/h-2.jpg" alt="Second slide">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Welkom bij ...!</h5>
+        <p>Hier kun je een ondertitel plaatsen</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="./images/h-3.jpg" alt="Third slide">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Welkom bij ...!</h5>
+        <p>Hier kun je een ondertitel plaatsen</p>
       </div>
     </div>
   </div>
+  <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Vorige</span>
+  </a>
+  <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Volgende</span>
+  </a>
+</div>
 
   <!-- Content -->
   <div class="container">
@@ -195,18 +297,23 @@
         </div>
         <div class="row mt-5">
           <div class="col-sm-12">
-            <form class="row">
+            <div class="invalid-feedback d-block"><?php echo $error_message?></div>
+            <div class="valid-feedback d-block mb-2"><?php echo $success_message?></div>
+            <form class="row" method="post" action="#contact">
               <div class="form-group col-6">
-                <input type="text" placeholder="Voornaam*" class="form-control" id="inputFirstname" aria-describedby="firstname">
+                <input type="text" placeholder="Voornaam*" class="form-control" name="inputFirstname" aria-describedby="firstname">
               </div>
               <div class="form-group col-6">
-                <input type="text" placeholder="Achternaam*" class="form-control" id="inputLastname" aria-describedby="lastname">
+                <input type="text" placeholder="Achternaam*" class="form-control" name="inputLastname" aria-describedby="lastname">
               </div>
               <div class="form-group col-6">
-                <input type="email" placeholder="Email*" class="form-control" id="inputEmail" aria-describedby="email">
+                <input type="email" placeholder="Email*" class="form-control" name="inputEmail" aria-describedby="email">
               </div>
               <div class="form-group col-6">
-                <input type="text" placeholder="Telefoonnummer*" class="form-control" id="inputPhone" aria-describedby="phone">
+                <input type="text" placeholder="Telefoonnummer*" class="form-control" name="inputPhone" aria-describedby="phone">
+              </div>
+              <div class="form-group col-12">
+                <textarea name="bericht" placeholder="Bericht" class="form-control" rows="4" cols="80"></textarea>
               </div>
               <div class="small text-muted col-12 text-sm-white">
                 * Verplicht veld
@@ -223,6 +330,8 @@
       </div>
     </div>
   </div>
+
+  <!-- Cookie popup -->
 
   <!-- footer -->
   <footer class="sticky-bottom bg-custom-dark text-center mt-5 pt-2">

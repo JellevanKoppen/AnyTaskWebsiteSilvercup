@@ -10,6 +10,16 @@ html {
   min-height: 500px;
 }
 
+.header-carousel {
+  box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.5);
+  max-height: 350px;
+}
+
+.header-carousel img {
+  max-height: 350px;
+  object-fit: cover;
+}
+
 .header-border {
   border: 4px solid white;
 }
@@ -41,7 +51,7 @@ html {
 .anchor {
   display: block;
   position: relative;
-  /* top: -107px; */
+  top: -107px;
   visibility: hidden;
 }
 
@@ -131,6 +141,11 @@ html {
     display: absolute;
     background: #FFFFFF url("../images/ph-4.jpg") no-repeat center;
     background-size: cover;
+  }
+
+  .invalid-feedback,.valid-feedback {
+    background-color: white;
+    border-radius: .25rem;
   }
 
   .text-sm-white {
