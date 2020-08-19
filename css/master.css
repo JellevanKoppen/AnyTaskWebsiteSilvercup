@@ -30,6 +30,26 @@ html {
   padding: 0rem 2rem !important;
 }
 
+.cookies {
+  width: 100%;
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+  height: 75px;
+  max-height: 75px;
+}
+
+.cookies-hidden {
+  max-height: 0px;
+  transition: max-height 0.5s ease-out;
+}
+
+.sticky-bottom {
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  z-index: 1020;
+}
+
 .btn-shadow {
   box-shadow: 0px 10px 17px rgba(0, 0, 0, 0.2)
 }
