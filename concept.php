@@ -21,214 +21,29 @@
   <!-- Navigation bar -->
   <?php include 'inc/nav.php' ?>
 
-  <!-- Carousel -->
-  <div id="carousel" class="carousel slide header-carousel" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-target="#carousel" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel" data-slide-to="1"></li>
-    <li data-target="#carousel" data-slide-to="2"></li>
-  </ol>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img class="d-block w-100" src="./images/h-1.jpg" alt="First slide">
-      <div class="carousel-caption d-none d-md-block">
-        <h5 class="text-custom">Welkom bij ...!</h5>
-        <p class="text-custom">Hier kun je een ondertitel plaatsen</p>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="./images/h-2.jpg" alt="Second slide">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Welkom bij ...!</h5>
-        <p>Hier kun je een ondertitel plaatsen</p>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="./images/h-3.jpg" alt="Third slide">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Welkom bij ...!</h5>
-        <p>Hier kun je een ondertitel plaatsen</p>
-      </div>
-    </div>
+  <div class="w-100">
+    <img src="./images/h-1.jpg" alt="" class="w-100 header" style="height: 200px;object-fit: cover;">
   </div>
-  <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Vorige</span>
-  </a>
-  <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Volgende</span>
-  </a>
-</div>
 
   <!-- Content -->
+  <!-- Zet hier je content! -->
   <div class="container">
-    <a class="anchor" id="about"></a>
-    <div class="row mt-5">
-
-      <div class="row">
-        <div class="col-5 ml-1 mr-n1 ml-md-4 px-md-5">
-          <h2 class="text-custom text-center mt-3">WIE ZIJN WIJ</h2>
-          <h5 class="text-custom text-center">TECH BEDRIJFSNAAM</h5>
-          <section class="text-justify text-muted small">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ac mi accumsan, pharetra mi non, mollis eros. Morbi et massa quis tortor porttitor consequat. Donec commodo, nisi et eleifend maximus, justo lectus porttitor risus,
-            laoreet convallis urna tellus vel mauris. Quisque at mi lacinia, sodales lorem quis, pretium orci. Nulla tellus ipsum, tincidunt et pharetra in, sodales vestibulum neque. Sed pulvinar molestie enim, id laoreet tortor semper in.
-          </section>
-          <section class="text-justify text-muted mt-4 small">
-            In dapibus, dolor sed pellentesque varius, sapien mauris vestibulum tellus, eget pretium magna velit vitae quam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam dictum nisl non metus molestie
-            dapibus. Duis bibendum odio ut maximus tempus. Aliquam sollicitudin velit nulla, nec faucibus orci cursus sed.
-          </section>
-        </div>
-        <div class="d-none d-md col-md-1"></div>
-        <div class="col-7 col-md-6">
-          <div class="row">
-            <div class="col-sm">
-              <img src="./images/ph-2.jpg" class="white-border w-100 img-fluid" alt="">
-            </div>
-          </div>
-          <div class="row mt-3">
-            <div class="col-sm">
-              <img src="./images/ph-1.jpg" class="white-border w-100 img-fluid" alt="">
-            </div>
-            <div class="col-sm">
-              <img src="./images/ph-3.jpg" class="white-border w-100 img-fluid" alt="">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="white-space"></div>
-
-    <a class="anchor" id="reviews"></a>
-
-    <div class="row mt-5">
+    <div class="row">
       <div class="col-12">
-        <h2 class="text-custom text-center">Wat onze klanten zeggen</h2>
+        <h1 class="text-custom mt-5 w-100">Zet hier je content</h1>
+        <h3 class="text-custom mt-2 w-100">Voorbeeldtekst</h3>
       </div>
-    </div>
-    <div class="row mt-3">
-      <div class="col-12 col-md-4 mt-sm-2 mt-md-5">
-        <div class="row">
-          <div class="col-3"></div>
-          <div class="col-6">
-            <img src="./images/hs-1.jpg" alt="" class="img-fluid w-100 rounded-circle">
-          </div>
-        </div>
-        <div class="row mt-3">
-          <div class="col-12">
-            <h5 class="text-custom text-center">Voornaam Achternaam</h5>
-          </div>
-          <div class="col-12">
-            <h5 class="text-muted text-center small font-weight-bold">CEO van Example Co.</h5>
-          </div>
-          <div class="col-4 mx-auto">
-            <img src="./images/sterren.jpg" class="w-100 img-fluid" alt="">
-          </div>
-        </div>
-        <div class="col-12 mt-3">
-          <section class="text-center text-custom">
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ac mi accumsan, pharetra mi non, mollis eros. Morbi et massa quis tortor porttitor consequat."
-          </section>
-        </div>
+      <div class="col-6 mt-5">
+        <section class="text-justify text-muted small">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ac mi accumsan, pharetra mi non, mollis eros. Morbi et massa quis tortor porttitor consequat. Donec commodo, nisi et eleifend maximus, justo lectus porttitor risus,
+          laoreet convallis urna tellus vel mauris. Quisque at mi lacinia, sodales lorem quis, pretium orci. Nulla tellus ipsum, tincidunt et pharetra in, sodales vestibulum neque. Sed pulvinar molestie enim, id laoreet tortor semper in.
+        </section>
       </div>
-      <div class="col-12 col-md-4 mt-sm-5">
-        <div class="row">
-          <div class="col-3"></div>
-          <div class="col-6">
-            <img src="./images/hs-2.jpg" alt="" class="img-fluid w-100 rounded-circle">
-          </div>
-        </div>
-        <div class="row mt-3">
-          <div class="col-12">
-            <h5 class="text-custom text-center">Voornaam Achternaam</h5>
-          </div>
-          <div class="col-12">
-            <h5 class="text-muted text-center small font-weight-bold">CEO van Example Co.</h5>
-          </div>
-          <div class="col-4 mx-auto">
-            <img src="./images/sterren.jpg" class="w-100 img-fluid" alt="">
-          </div>
-        </div>
-        <div class="col-12 mt-3">
-          <section class="text-center text-custom">
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ac mi accumsan, pharetra mi non, mollis eros. Morbi et massa quis tortor porttitor consequat."
-          </section>
-        </div>
-      </div>
-      <div class="col-12 col-md-4 mt-sm-5">
-        <div class="row">
-          <div class="col-3"></div>
-          <div class="col-6">
-            <img src="./images/hs-3.jpg" alt="" class="img-fluid w-100 rounded-circle">
-          </div>
-        </div>
-        <div class="row mt-3">
-          <div class="col-12">
-            <h5 class="text-custom text-center">Voornaam Achternaam</h5>
-          </div>
-          <div class="col-12">
-            <h5 class="text-muted text-center small font-weight-bold">CEO van Example Co.</h5>
-          </div>
-          <div class="col-4 mx-auto">
-            <img src="./images/sterren.jpg" class="w-100 img-fluid" alt="">
-          </div>
-        </div>
-        <div class="col-12 mt-3">
-          <section class="text-center text-custom">
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ac mi accumsan, pharetra mi non, mollis eros. Morbi et massa quis tortor porttitor consequat."
-          </section>
-        </div>
-      </div>
-    </div>
-
-    <div class="white-space"></div>
-
-    <a class="anchor" id="contact"></a>
-    <div class="row mt-5 contact pt-2 pb-5 white-border-sm">
-      <div class="col-md-6">
-        <div class="row mt-3">
-          <div class="col-sm">
-            <h2 class="text-custom text-sm-white">CONTACT</h2>
-          </div>
-        </div>
-        <div class="row mt-1">
-          <div class="col-sm">
-            <h4 class="text-custom text-sm-white">Laten we kennis maken!</h4>
-          </div>
-        </div>
-        <div class="row mt-5">
-          <div class="col-sm-12">
-            <div class="invalid-feedback d-block"><?php echo $error_message?></div>
-            <div class="valid-feedback d-block mb-2"><?php echo $success_message?></div>
-            <form class="row" method="post" action="#contact">
-              <div class="form-group col-6">
-                <input type="text" placeholder="Voornaam*" class="form-control" name="inputFirstname" aria-describedby="firstname">
-              </div>
-              <div class="form-group col-6">
-                <input type="text" placeholder="Achternaam*" class="form-control" name="inputLastname" aria-describedby="lastname">
-              </div>
-              <div class="form-group col-6">
-                <input type="email" placeholder="Email*" class="form-control" name="inputEmail" aria-describedby="email">
-              </div>
-              <div class="form-group col-6">
-                <input type="text" placeholder="Telefoonnummer*" class="form-control" name="inputPhone" aria-describedby="phone">
-              </div>
-              <div class="form-group col-12">
-                <textarea name="bericht" placeholder="Bericht" class="form-control" rows="3" cols="80"></textarea>
-              </div>
-              <div class="small text-muted col-12 text-sm-white">
-                * Verplicht veld
-              </div>
-              <div class="text-center col-12">
-                <button type="submit" class="btn btn-custom px-5">VERSTUUR</button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-      <div class="d-none d-md-block col-md-6">
-        <img src="./images/ph-4.jpg" alt="" class="img-fluid w-100 white-border">
+      <div class="col-6 mt-5">
+        <section class="text-justify text-muted small">
+          In dapibus, dolor sed pellentesque varius, sapien mauris vestibulum tellus, eget pretium magna velit vitae quam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam dictum nisl non metus molestie
+          dapibus. Duis bibendum odio ut maximus tempus. Aliquam sollicitudin velit nulla, nec faucibus orci cursus sed.
+        </section>
       </div>
     </div>
   </div>

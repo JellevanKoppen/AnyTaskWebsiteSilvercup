@@ -140,7 +140,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   <div class="container">
     <a class="anchor" id="about"></a>
     <div class="row mt-5">
-
       <div class="row">
         <div class="col-5 ml-1 mr-n1 ml-md-4 px-md-5">
           <h2 class="text-custom text-center mt-3">WIE ZIJN WIJ</h2>

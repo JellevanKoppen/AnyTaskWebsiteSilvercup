@@ -12,13 +12,13 @@
         <a class="nav-link" href="index.php">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#about">Wie zijn wij</a>
+        <a class="nav-link" href="index.php#about">Wie zijn wij</a>
       </li>
       <!-- <li class="nav-item">
         <a class="nav-link disabled" href="newpage.php">New page name</a>
       </li> -->
       <li class="nav-item">
-        <a class="nav-link" href="#contact">Contact</a>
+        <a class="nav-link" href="index.php#contact">Contact</a>
       </li>
     </ul>
   </div>
