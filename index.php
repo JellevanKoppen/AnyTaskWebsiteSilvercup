@@ -59,7 +59,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     $fromAddress = "-fpostmaster@localhost";
-    $toEmail = "jelle@sprietenbos.nl";
     $mailHeaders = "From: " . $voornaam . "<". $email .">\r\n";
 
     require('inc/PHPMailer.php');
